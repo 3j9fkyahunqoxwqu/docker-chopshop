@@ -20,8 +20,11 @@ RUN \
                       libpcre3 \
                       libtool \
                       python \
+                      swig \
                       gcc --no-install-recommends && \
   easy_install pymongo && \
+  easy_install M2Crypto && \
+  easy_install pycrypto && \
   easy_install dnslib
 
 # Install Yara and remove install dir after to conserve space
