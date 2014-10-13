@@ -107,5 +107,6 @@ chopshop -f malware.pcap "(dns, icmp) | malware_detector"
 
 ### Todo
 - [x] Install/Run ChopShop
+- [ ] Add MongoDB
 - [ ] Start Daemon and watch folder with supervisord
 - [ ] Have container take a URL as input and download/scan pcap

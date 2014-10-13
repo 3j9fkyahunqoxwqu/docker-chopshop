@@ -85,7 +85,7 @@ RUN  \
 # Install ChopShop and remove install dir after to conserve space
 ADD chopshop.cfg /root/.chopshop.cfg
 RUN  \
-  git clone --recursive --branch RELEASE_4.1 git://github.com/MITRECND/chopshop && \
+  git clone --recursive git://github.com/MITRECND/chopshop && \
   cd chopshop && \
   make && \
   make install && \
