@@ -1,7 +1,7 @@
 ChopShop Dockerfile
 ==================
 
-This repository contains a **Dockerfile** of [ChopShop](https://github.com/MITRECND/chopshop) for [Docker](://www.docker.io/)'s [trusted build](://index.docker.io/u/blacktop/chopshop/) published to the public [Docker Registry](://index.docker.io/).
+This repository contains a **Dockerfile** of [ChopShop](https://github.com/MITRECND/chopshop) for [Docker](https://www.docker.io/)'s [trusted build](https://index.docker.io/u/blacktop/chopshop/) published to the public [Docker Registry](https://index.docker.io/).
 
 ### Dependencies
 * [debian:wheezy](://index.docker.io/_/debian/)
@@ -9,15 +9,14 @@ This repository contains a **Dockerfile** of [ChopShop](https://github.com/MITRE
 ### Image Sizes
 | Image | Virtual Size | ChopShop 4| TOTAL     |
 |:------:|:-----------:|:---------:|:---------:|
-| debian | 85.19 MB    | 432.61 MB | 517.8 MB  |
+| debian | 85.19 MB    | 247.81 MB | 333 MB    |
 
 ### Image Tags
 ```bash
 $ docker images
 
 REPOSITORY          TAG                 IMAGE ID           VIRTUAL SIZE
-blacktop/chopshop   latest              3c2c99892865       531.7 MB
-blacktop/chopshop   4.1                 818430bd5aba       517.8 MB
+blacktop/chopshop   latest              3c2c99892865       333 MB
 ```
 
 ### Installation
