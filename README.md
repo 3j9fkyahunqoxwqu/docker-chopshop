@@ -9,14 +9,14 @@ This repository contains a **Dockerfile** of [ChopShop](https://github.com/MITRE
 ### Image Sizes
 | Image | Virtual Size | ChopShop 4| TOTAL     |
 |:------:|:-----------:|:---------:|:---------:|
-| debian | 85.19 MB    | 247.81 MB | 333 MB    |
+| debian | 85.19 MB    | 256.51 MB | 341.7 MB  |
 
 ### Image Tags
 ```bash
 $ docker images
 
 REPOSITORY          TAG                 IMAGE ID           VIRTUAL SIZE
-blacktop/chopshop   latest              3c2c99892865       333 MB
+blacktop/chopshop   latest              5a007acf89a3       341.7 MB
 ```
 
 ### Installation
