@@ -11,6 +11,8 @@ RUN \
   apt-get -qq update && \
   apt-get install -yq python-setuptools \
                       build-essential \
+                      libjansson-dev \
+                      libmagic-dev \
                       libpcre3-dev \
                       libpcap-dev \
                       python-dev \
@@ -32,7 +34,7 @@ RUN  \
   git clone --recursive --branch v3.1.0 git://github.com/plusvic/yara && \
   cd yara && \
   ./bootstrap.sh && \
-  ./configure && \
+  ./configure --enable-cuckoo --enable-magic && \
   make && \
   make install && \
   echo "/usr/local/lib" >> /etc/ld.so.conf && \
