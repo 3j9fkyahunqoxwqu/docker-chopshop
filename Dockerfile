@@ -2,7 +2,7 @@ FROM debian:wheezy
 
 MAINTAINER blacktop, https://github.com/blacktop
 
-#Prevent daemon start during install
+# Prevent daemon start during install
 RUN echo '#!/bin/sh\nexit 101' > /usr/sbin/policy-rc.d && \
     chmod +x /usr/sbin/policy-rc.d
 
@@ -26,7 +26,9 @@ RUN \
   easy_install pymongo && \
   easy_install M2Crypto && \
   easy_install pycrypto && \
-  easy_install dnslib
+  easy_install dnslib && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install Yara and remove install dir after to conserve space
 RUN  \
