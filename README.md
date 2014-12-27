@@ -4,19 +4,19 @@ ChopShop Dockerfile
 This repository contains a **Dockerfile** of [ChopShop](https://github.com/MITRECND/chopshop) for [Docker](https://www.docker.io/)'s [trusted build](https://index.docker.io/u/blacktop/chopshop/) published to the public [Docker Registry](https://index.docker.io/).
 
 ### Dependencies
-* [debian:wheezy](://index.docker.io/_/debian/)
+* [blacktop/yara:3.2.0](https://registry.hub.docker.com/u/blacktop/yara/)
 
 ### Image Sizes
-| Image | Virtual Size | ChopShop 4| TOTAL     |
-|:------:|:-----------:|:---------:|:---------:|
-| debian | 85.1 MB     | 248.5 MB  | 341.7 MB  |
+| Image  | Virtual Size | ChopShop 4| TOTAL     |
+|:------:|:------------:|:---------:|:---------:|
+| yara   | 323.6 MB     | 23.6 MB   | 347.2 MB  |
 
 ### Image Tags
 ```bash
 $ docker images
 
 REPOSITORY          TAG                 IMAGE ID           VIRTUAL SIZE
-blacktop/chopshop   latest              bec4577e0c50       333.6 MB
+blacktop/chopshop   latest              1df35766838d       347.2 MB
 ```
 
 ### Installation
