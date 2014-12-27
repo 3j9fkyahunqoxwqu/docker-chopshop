@@ -9,14 +9,14 @@ This repository contains a **Dockerfile** of [ChopShop](https://github.com/MITRE
 ### Image Sizes
 | Image | Virtual Size | ChopShop 4| TOTAL     |
 |:------:|:-----------:|:---------:|:---------:|
-| debian | 85.19 MB    | 256.51 MB | 341.7 MB  |
+| debian | 85.1 MB     | 248.5 MB  | 341.7 MB  |
 
 ### Image Tags
 ```bash
 $ docker images
 
 REPOSITORY          TAG                 IMAGE ID           VIRTUAL SIZE
-blacktop/chopshop   latest              5a007acf89a3       341.7 MB
+blacktop/chopshop   latest              bec4577e0c50       333.6 MB
 ```
 
 ### Installation
@@ -90,8 +90,7 @@ $ brew install cask
 $ brew cask install virtualbox
 $ brew install docker
 $ brew install boot2docker
-$ curl http://static.dockerfiles.io/boot2docker-v1.2.0-virtualbox-guest-additions-v4.3.14.iso > ~/.boot2docker/boot2docker.iso
-$ VBoxManage sharedfolder add boot2docker-vm -name home -hostpath /Users
+$ boot2docker init
 $ boot2docker up
 ```
 Add the following to your bash or zsh profile
