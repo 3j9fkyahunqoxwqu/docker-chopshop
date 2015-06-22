@@ -1,4 +1,4 @@
-FROM blacktop/yara:3.3.0
+FROM blacktop/yara:3.1.0
 
 MAINTAINER blacktop, https://github.com/blacktop
 
@@ -9,6 +9,7 @@ RUN chmod -R 755 /tmp/install
 # Install ChopShop Required Dependencies
 RUN buildDeps='autoconf \
                 automake \
+                apt-utils \
                 build-essential \
                 git-core \
                 libmagic-dev \
