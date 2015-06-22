@@ -4,7 +4,7 @@ ChopShop Dockerfile
 This repository contains a **Dockerfile** of [ChopShop](https://github.com/MITRECND/chopshop) for [Docker](https://www.docker.io/)'s [trusted build](https://index.docker.io/u/blacktop/chopshop/) published to the public [Docker Registry](https://index.docker.io/).
 
 ### Dependencies
-* [blacktop/yara:3.3.0](https://registry.hub.docker.com/u/blacktop/yara/)
+* [debian:jessie](https://index.docker.io/_/debian/)
 
 ### Image Size
 [![](https://badge.imagelayers.io/blacktop/chopshop:latest.svg)](https://imagelayers.io/?images=blacktop/chopshop:latest 'Get your own badge on imagelayers.io')
@@ -14,7 +14,7 @@ This repository contains a **Dockerfile** of [ChopShop](https://github.com/MITRE
 $ docker images
 
 REPOSITORY          TAG                 IMAGE ID           VIRTUAL SIZE
-blacktop/chopshop   latest              1df35766838d       347.2 MB
+blacktop/chopshop   latest              1df35766838d       261.3 MB
 ```
 
 ### Installation
