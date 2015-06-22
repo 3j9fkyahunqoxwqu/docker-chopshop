@@ -28,7 +28,7 @@ RUN buildDeps='apt-utils \
                         libtool \
                         python \
                         python-yara \
-                        swig
+                        swig \
                         yara --no-install-recommends \
   && easy_install pymongo \
                   M2Crypto \
