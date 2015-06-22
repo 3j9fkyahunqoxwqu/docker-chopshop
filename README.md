@@ -6,10 +6,8 @@ This repository contains a **Dockerfile** of [ChopShop](https://github.com/MITRE
 ### Dependencies
 * [blacktop/yara:3.2.0](https://registry.hub.docker.com/u/blacktop/yara/)
 
-### Image Sizes
-| Image  | Virtual Size | ChopShop 4| TOTAL     |
-|:------:|:------------:|:---------:|:---------:|
-| yara   | 323.6 MB     | 23.6 MB   | 347.2 MB  |
+### Image Size
+[![](https://badge.imagelayers.io/blacktop/chopshop:latest.svg)](https://imagelayers.io/?images=blacktop/chopshop:latest 'Get your own badge on imagelayers.io')
 
 ### Image Tags
 ```bash
@@ -34,7 +32,7 @@ $ docker build -t blacktop/chopshop github.com/blacktop/docker-chopshop
 $ docker run -i -t -v /path/to/folder/pcap:/pcap:rw blacktop/chopshop -f my.pcap "http | http_extractor"
 ```
 #### Output:
-```json
+```
 {
   "request": {
     "protocol": "HTTP/1.1",
