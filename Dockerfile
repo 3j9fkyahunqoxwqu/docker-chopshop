@@ -14,7 +14,6 @@ RUN buildDeps='apt-utils \
                 git-core \
                 libemu-dev \
                 libmagic-dev \
-                libpcap-dev \
                 libpcre3-dev \
                 libssl-dev \
                 python-dev \
@@ -24,6 +23,7 @@ RUN buildDeps='apt-utils \
   && apt-get -q update \
   && apt-get install -y $buildDeps \
                         ca-certificates \
+                        libpcap-dev \                        
                         libpcre3 \
                         libtool \
                         python \

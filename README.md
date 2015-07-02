@@ -14,7 +14,7 @@ This repository contains a **Dockerfile** of [ChopShop](https://github.com/MITRE
 $ docker images
 
 REPOSITORY          TAG                 IMAGE ID           VIRTUAL SIZE
-blacktop/chopshop   latest              1df35766838d       261.3 MB
+blacktop/chopshop   latest              1df35766838d       262.3 MB
 ```
 
 ### Installation
