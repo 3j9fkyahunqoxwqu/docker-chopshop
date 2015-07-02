@@ -87,9 +87,9 @@ $ docker run -i -t -v /path/to/folder/pcap:/pcap:rw blacktop/chopshop -f my.pcap
 $ brew install cask
 $ brew cask install virtualbox
 $ brew install docker
-$ brew install boot2docker
-$ boot2docker init
-$ boot2docker up
+$ brew install docker-machine
+$ docker-machine create --driver virtualbox dev
+$ eval $(docker-machine env dev)
 ```
 Add the following to your bash or zsh profile
 
@@ -105,5 +105,3 @@ chopshop -f malware.pcap "(dns, icmp) | malware_detector"
 ### Todo
 - [x] Install/Run ChopShop
 - [ ] Add MongoDB
-- [ ] Start Daemon and watch folder with supervisord
-- [ ] Have container take a URL as input and download/scan pcap
