@@ -84,7 +84,7 @@ $ docker run -i -t -v /path/to/folder/pcap:/pcap:rw blacktop/chopshop -f my.pcap
  - Install [Homebrew](http://brew.sh)
 
 ```bash
-$ brew install cask
+$ brew install caskroom/cask/brew-cask
 $ brew cask install virtualbox
 $ brew install docker
 $ brew install docker-machine
