@@ -29,7 +29,7 @@ $ docker build -t blacktop/chopshop github.com/blacktop/docker-chopshop
 ```
 ### Usage
 ```bash
-$ docker run -i -t -v /path/to/folder/pcap:/pcap:rw blacktop/chopshop -f my.pcap "http | http_extractor"
+$ docker run -i -t -v /path/to/folder/pcap:/pcap:ro blacktop/chopshop -f my.pcap "http | http_extractor"
 ```
 #### Output:
 ```
@@ -94,7 +94,7 @@ $ eval $(docker-machine env dev)
 Add the following to your bash or zsh profile
 
 ```bash
-alias chopshop='docker run -it --rm -v `pwd`:/pcap:rw blacktop/chopshop $@'
+alias chopshop='docker run -it --rm -v `pwd`:/pcap:ro blacktop/chopshop $@'
 ```
 #### Usage
 
